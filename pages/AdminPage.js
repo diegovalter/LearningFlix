@@ -1,8 +1,16 @@
 export class AdminPage {
     constructor(page) {
     this.page = page
-    this.page = page.locator('[data-text="Plugins"]')
-    this.page = page.locator('[data-text="Aparência"]')
+    this.plugins = page.locator('[data-text="Plugins"]')
+    this.aparencia = page.locator('[data-text="Aparência"]')
 
     }
+
+    async temas(){
+        await this.aparencia.click()
+    }
+
+
+
+
 }
